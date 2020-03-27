@@ -1,3 +1,7 @@
 .primary-nav-bg-2 {
     background-color: #7e7b1a;
 }
+
+.selected {
+    background-color:  red !important;
+}

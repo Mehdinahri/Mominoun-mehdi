@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Article01RoutingModule } from './article01-routing.module';
 import { Article01Component } from './article01.component';
-
+import { LazyLoadImageModule } from 'ng-lazyload-image'; // <-- import it
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 @NgModule({
   declarations: [Article01Component],
   imports: [
     CommonModule,
-    Article01RoutingModule
+    LazyLoadImageModule,
+    NgxPaginationModule
   ],exports:[
     Article01Component
   ]

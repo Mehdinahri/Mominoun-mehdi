@@ -1,9 +1,4 @@
-.title-acceuil, .title-acceuil:after {
-    background: #df5111;
-}
-.title-versions, .title-versions:after {
-    background: #273135;
-}
+
 .title {
     position: absolute;
     top: 0;
@@ -33,6 +28,7 @@
     align-items: center;
     justify-content: center;
 }
+
 article:hover .title {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -40,6 +36,7 @@ article:hover .title {
     -ms-transform: scale(1);
     -o-transform: scale(1);
 }
+
 article:hover .img-magasin {
     filter: blur(6px);
     -webkit-filter: blur(6px);

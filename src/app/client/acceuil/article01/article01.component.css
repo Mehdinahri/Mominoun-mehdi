@@ -37,4 +37,8 @@
         top: 41%;
     }
 }
+
+.img-post[src="assets/img/spinner/sp-lg.svg"] {
+    height: 400px
+}
     
