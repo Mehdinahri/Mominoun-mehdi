@@ -1,0 +1,22 @@
+<app-topnav ></app-topnav>
+<div  class="logo-wrapper d-lg-none d-xl-none">
+    <div  class="text-center" id="logo">
+        <img  alt="logo" class="logo-mobile" height="81" src="assets/img/logo_mominoun.png" width="118">
+        <span   class="icon-menu-1 pointer icon-mobile-menu" (click)="openNav()" hidden=""></span>
+    </div>
+</div>
+<div  class="container pt-3 pb-3" (click)="closeNav()">
+    <div  class="row">
+        <div  class="col-md-4 d-none d-lg-inline-block text-center p-0">
+            <div  class="d-flex align-items-center justify-content-between" style="height: 100%">
+                <img  alt="logo mominoun" class="img-fluid pointer" routerlink="/" src="../../assets/img/logo_mominoun.png" width="118" tabindex="0">
+            </div>
+        </div>
+        <div  class=" col-12 col-lg-8 p-0">
+            <a  class="d-block text-center" href="">
+                <img  alt="" class="img-fluid" src="../../assets/img/pub.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+<app-mainnav></app-mainnav>

@@ -1,0 +1,36 @@
+.auth-desc{
+    display: inline-flex;
+}
+.auth-desc img{
+    width: 14%;
+    margin: -2px 6px 0px 6%;
+}
+.border-bottom {
+    padding-bottom: 31px;
+}
+.m-post-title{
+    color:rgb(223, 160, 78) !important;
+    font-size: 17px;
+}
+
+@media (max-width: 909px){
+    .auth-desc img{
+        width: 18%;
+        margin: -2px 15px 0px 6%;
+    }
+}
+@media (max-width:420px) {
+    .col-6{
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}}
+.page-link:hover {
+    color: #ffffff;
+    background-color: #fdc5ab;
+}
+.page-link {
+    color: #000000;
+    border: none;
+}

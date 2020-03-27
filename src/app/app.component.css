@@ -1,0 +1,7 @@
+@media screen and (max-width:991px){
+    .menu-left-side{
+        left:0px;
+        width: 100%;
+        background: #1e2023cc;
+    }
+}

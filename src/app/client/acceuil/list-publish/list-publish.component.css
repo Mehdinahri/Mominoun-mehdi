@@ -1,0 +1,63 @@
+.title-acceuil, .title-acceuil:after {
+    background: #e05211;
+}
+section {
+    margin-bottom: 40px;
+}
+.publish-part-1 .item {
+    background-size: cover!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    width: 100%;
+    height: 145px;
+    border: 1px solid #fff;
+}
+.publish-part-1 .item h6 {
+    margin: 0;
+    bottom: 0;
+    padding: 4px;
+    background: rgba(0,0,0,.3);
+    font-weight: 700;
+    width: 100%;
+    min-height: 50px;
+}
+.type-publish {
+    margin: 10px 0;
+    display: flex;
+    background: #eee;
+}
+.type-publish .selected {
+    color: #e05211;
+    border-bottom: 1px solid #e05211;
+}
+.type-publish li {
+    flex-grow: 1;
+    background: rgba(0,0,0,.02);
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.1);
+    border-width: 0 1px 1px 0;
+    font-size: 15px;
+    padding: 15px 10px;
+}
+.type-publish li a {
+    width: 100%;
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.type-publish .selected a, .type-publish li a:hover {
+    color: #e05211;
+}
+@media screen and (min-width: 992px)
+{
+    .publish-part-1 .item {
+        height: 255px !important;
+    }
+}
+@media screen and (min-width: 768px)
+{
+    .publish-part-1 .item {
+        height: 180px;
+    }
+}

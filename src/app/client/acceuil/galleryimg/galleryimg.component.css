@@ -1,0 +1,7 @@
+.title-acceuil, .title-acceuil:after {
+    background: #e05211;
+}
+.flex-row-item {
+    flex-grow: 1;
+    flex: 1 1 30%;
+}

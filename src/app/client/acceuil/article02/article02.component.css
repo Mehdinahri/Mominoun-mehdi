@@ -1,0 +1,23 @@
+.publish-part-3 .xcol-2 h5, .publish-part-3 .xcol-3 h5 {
+    font-size: 14px;
+    margin: 0;
+}
+.separator .progress {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+}
+.bg-acceuil {
+    background: #df5111;
+}
+.title-acceuil, .title-acceuil:after {
+    color: #df5111;
+}
+.publish-part-3 .xcol-1 h3 {
+    font-size: 20px;
+}
+.mt-1, .my-1 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,45 @@
+.owl-carousel.owl-drag .owl-item {
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.title-acceuil, .title-acceuil:after {
+    background: #df5111;
+}
+.title-dirasat, .title-dirasat:after {
+    background: #a11512;
+}
+.title-anshita, .title-anshita:after {
+    background: #7e7b1a;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+}
+.owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.owl-stage {
+    position: relative;
+    touch-action: manipulation;
+    display: flex;
+    -moz-backface-visibility: hidden;
+}
+.btn-versions, .title-versions, .title-versions:after {
+    background: #57230e;
+}
+.author-nav {
+    position: relative;
+    top: 120px;
+    z-index: 99;
+}
+@media (max-width: 620px){
+    .img-fluid{
+        max-width: 80%;
+    }
+}

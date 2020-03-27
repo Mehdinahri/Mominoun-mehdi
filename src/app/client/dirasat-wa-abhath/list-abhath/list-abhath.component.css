@@ -1,0 +1,73 @@
+.row .item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+}
+.section_title {
+    background: #c9c9c9;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 15px;
+    margin: 0;
+}
+.item-radicalism a:hover, .section_title_radicalism {
+    color: #a11412!important;
+}
+.item-anshita a:hover, .section_title_anshita {
+    color: #7e7b1a!important;
+}
+
+
+.row .item h3 a {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    display: block;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.row .item .text-time {
+    font-size: 12px;
+}
+.row .item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5a5a5a;
+}
+.row .item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5a5a5a;
+}
+.media img {
+    margin: 0;
+}
+.row .item .img {
+    width: 500px;
+}
+.page-link:hover {
+    color: #ffffff;
+    background-color: #fdc5ab;
+}
+.page-link {
+    color: #000000;
+    border: none;
+}
+@media screen and (min-width: 992px){
+
+    .row .item .img {
+        width: 349px;
+    }
+}
+@media screen and (max-width: 992px){
+
+    .media {
+        display: block;
+    }
+}
+@media screen and (min-width: 992px){
+
+    .media img {
+        margin-left: 10px;
+    }
+}

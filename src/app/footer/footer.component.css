@@ -1,0 +1,51 @@
+footer {
+    background-attachment: scroll,scroll,scroll,scroll;
+    background-color: #9a9a9a;
+    background-origin: padding-box,padding-box,padding-box,padding-box;
+    background-position: 0 0,8px 8px,0 1px,8px 9px;
+    background-repeat: repeat,repeat,repeat,repeat;
+    background-size: 16px 16px;
+}
+footer form .email {
+    background: url(newsletter.c4.png) 95% center no-repeat #fff;
+}
+footer .copyright, footer .newsletter, footer .social-media {
+    margin: 30px auto 0;
+}
+footer .social-media ul {
+    max-width: 180px;
+    margin: 30px auto 0;
+}
+footer form button {
+    background: url(newsletter_arrow.png) center center no-repeat #df5111;
+    border: none;
+    font-size: 0;
+    height: 38px;
+    width: 42px;
+    cursor: pointer;
+}
+@media screen and (min-width: 712px)
+{
+    footer .xcol-1 > ul {
+        margin-right: auto;
+    }
+}
+footer .xcol-1 > ul {
+    max-width: 290px;
+    margin: auto;
+}
+footer .xcol-1 {
+    background: rgba(0,0,0,.1);
+}
+.border-xcol {
+    border-left: none;
+    border-right: none;
+}
+@media screen and (min-width: 587px)
+{
+    .border-xcol {
+        border-left: 1px solid #888;
+        border-right: 2px solid #888;
+        border-bottom: 2px solid #888;
+    }
+}

@@ -1,0 +1,6 @@
+.title-acceuil, .title-acceuil:after {
+    background: #e05211;
+}
+.owl-item{
+    display: -webkit-inline-box;
+}

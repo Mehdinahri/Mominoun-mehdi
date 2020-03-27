@@ -1,0 +1,48 @@
+.marquee{
+    background-color:#f5f5f5;
+    color:#000;
+    white-space:nowrap;
+    overflow:hidden;
+    box-sizing:border-box;
+    width:100%}
+    .marquee .news{
+        padding:10px;
+        animation:30s linear infinite marquee;
+        -webkit-animation:30s linear infinite marquee
+        
+    }
+    .marquee:hover .news:hover{
+        animation-play-state: paused !important;
+    }
+    @-webkit-keyframes marquee{
+        0%{
+            transform:translate(-100%,0);
+            -webkit-transform:translate(-100%,0);
+            -moz-transform:translate(-100%,0);
+            -ms-transform:translate(-100%,0);
+            -o-transform:translate(-100%,0)
+        }
+        100%{
+            transform:translate(100%,0);
+            -webkit-transform:translate(100%,0);
+            -moz-transform:translate(100%,0);
+            -ms-transform:translate(100%,0);
+            -o-transform:translate(100%,0)
+        }
+    }
+    @keyframes marquee{
+        0%{
+            transform:translate(-100%,0);
+            -webkit-transform:translate(-100%,0);
+            -moz-transform:translate(-100%,0);
+            -ms-transform:translate(-100%,0);
+            -o-transform:translate(-100%,0)
+        }
+        100%{
+            transform:translate(100%,0);
+            -webkit-transform:translate(100%,0);
+            -moz-transform:translate(100%,0);
+            -ms-transform:translate(100%,0);
+            -o-transform:translate(100%,0)
+        }
+    }

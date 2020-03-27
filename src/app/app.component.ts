@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mominoun-client';
+  closeNav() {
+    document.getElementById("menu-left-side").style.left = "-990px";
+  }
 }
