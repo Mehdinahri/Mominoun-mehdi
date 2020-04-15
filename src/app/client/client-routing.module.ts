@@ -14,9 +14,14 @@ const routes: Routes = [
   { path: 'qiraat-fi-kutob', loadChildren: () => import('./qiraat-fi-kutob/qiraat-fi-kutob.module').then(m => m.QiraatFiKutobModule) },
   { path: 'isdarat', loadChildren: () => import('./isdarat/isdarat.module').then(m => m.IsdaratModule) },
   { path: 'anshita', loadChildren: () => import('./anshita/anshita.module').then(m => m.AnshitaModule) },
-  { path: 'media', loadChildren: () => import('./media/media.module').then(m => m.MediaModule) }
+  { path: 'media', loadChildren: () => import('./media/media.module').then(m => m.MediaModule) },
+  { path: 'article', loadChildren: () => import('./article/article.module').then(m => m.ArticleModule) },
+  { path: 'author', loadChildren: () => import('./author/author.module').then(m => m.AuthorModule) },
+  { path: 'images', loadChildren: () => import('./images/images.module').then(m => m.ImagesModule) },
+  { path: 'video', loadChildren: () => import('./video/video.module').then(m => m.VideoModule) }
   ]
- }];
+ }
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

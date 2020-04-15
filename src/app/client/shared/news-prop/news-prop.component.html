@@ -1,0 +1,21 @@
+<section class="m-sec">
+    <h5 class="mb-3 font-weight-bold title-section title-acceuil">{{title}}</h5>
+    <div *ngFor="let item of list" class="xcol-1 col-sm-6 col-lg-4 p-1">
+        <a  href="{{item?.link}}">
+            <img class="img-fluid" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+        </a>
+        <div  class="post-detail mt-1">
+            <p  class="m-0 text-time">
+                <span  class="icon-user span"></span>
+                <a  href="{{item?.link}}">
+                    <span  class="ng-tns-c11-2">{{item?.author}}</span>
+                </a><br>
+                <span  class="icon-clock"></span>
+                <a href="{{item?.link}}">
+                    <span  class="ng-tns-c11-2">{{item?.date}}</span>
+                </a>
+            </p>
+            <h5  class=" mt-1 mb-1 pointer"><b >{{item?.title}}</b></h5>
+        </div>
+    </div>
+</section>

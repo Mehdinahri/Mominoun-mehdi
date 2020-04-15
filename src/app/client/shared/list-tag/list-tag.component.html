@@ -1,0 +1,12 @@
+<section class="m-sec">
+<h5 class="mb-3 font-weight-bold title-section title-acceuil" style="max-width: 160px;">{{title}}</h5>
+   <div class="row m-0 p-0 publish-part-1">
+        <ul class="list-group list-group-horizontal-md list-cont" style="list-style: none;">
+            <li *ngFor="let item of list">
+                <h4>
+                    <a href="{{item.link}}" class="badge badge-light">{{item.tag}}</a>
+                </h4>
+            </li>
+        </ul>
+    </div>
+</section>

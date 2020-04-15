@@ -1,0 +1,58 @@
+<app-secondry-nav></app-secondry-nav>
+<article class="container">
+    <div style="margin: auto;" class="mb-3">
+        <h2  class="section_title section_title_acceuil">تعريف الكاتب</h2>
+        <div *ngFor="let item of list" class="card">
+            <div class="card-body text-center">
+                <p>
+                    <img class="img-fluid auth-img rounded-circle " style="width: 30%;" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="list[0]?.image" [alt]="list[0]?.name">
+                </p>
+                <h4 class="card-title">{{item?.name}}</h4>
+                <p class="card-text text-justify">{{item?.desc}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="content" style="display:flex;">
+        <div class="col-12 col-md-8">
+            <h2  class="section_title section_title_acceuil">مقالات أخرى للكاتب</h2>
+            <div  class="row">
+                <div  class="row">
+                    <div *ngFor="let item of listartl" class="col-12  main-post p-2">
+                        <div  class="img-main ">
+                        <img class="img-fluid mb-2" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+                        <div  class="post-info">
+                            <ul  class="list-unstyled pr-3 m-0">
+                                <li >
+                                <p  class="m-0 text-time">
+                                <span  class="icon-user"></span>
+                                <span >{{item?.author}}</span>
+                                <span  class="icon-clock d-inline-block ml-2 mr-0"></span>
+                                <span > {{item?.date}}</span>
+                            </p>
+                            </li>
+                                <li  class="mb-1 mt-1">
+                                    <h3  class=" m-0 pointer"><b >{{item?.title}}</b></h3>
+                                </li>
+                                <li >
+                                    <p  class="paragraphe">{{item?.desc}}</p>
+                                </li>
+                                <li >
+                                    <button  class="btn-sm btn-light bg-acceuil btn text-light">المزيد</button>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
+            <!-- widget slide -->
+            <app-widget-slid [title1]="'مختارات مومنون'" [color1]="'section_title section_title_acceuil'"></app-widget-slid>
+            <!-- widget news -->
+            <app-widget-news1 [title1]="'الأكثر قراءة لهذا الأسبوع'" [color1]="'section_title section_title_acceuil'"></app-widget-news1>
+            <!-- widget Image -->
+            <app-widget-image [title1]="'تابعنا على مواقع التواصل'" [color1]="'section_title section_title_acceuil'" ></app-widget-image>
+        </div>
+    </div>
+</article>

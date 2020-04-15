@@ -1,7 +1,7 @@
 <section  class="mt-3 mb-3">
     <div  class="container-wrapper m-sec">
         <div  class="d-flex aling-items-center d-flex justify-content-between top-content">
-            <h5  class="m-0 font-weight-bold title-acceuil ">{{titrecat}}</h5>
+            <h5  class="m-0 font-weight-bold title-artl ">{{titrecat}}</h5>
         </div>
         <div  class="separator">
             <div  class="progress bg-acceuil"></div>
@@ -19,111 +19,33 @@
                     <h3  class=" mt-1 mb-1 pointer"><b >عنوان المقال: الموقع الجديد مؤمنون بلا حدود</b></h3>
                 </div>
             </div>
-            <div  class="xcol-2 col-sm-6 col-lg-4 p-1">
+            <div class="xcol-2 col-sm-6 col-lg-4 p-1">
                 <!---->
-                <div  class="media mb-1 ng-star-inserted">
-                    <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
+                <div *ngFor="let item of list1"  class="media mb-1 ng-star-inserted">
+                    <img  alt="Generic placeholder image" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title" class="img-body" width="110">
                     <div  class="media-body">
                         <p  class="m-0 text-time">
+                            <span  class="icon-user"></span>
+                            <span  class="ng-tns-c11-2">{{item?.author}}</span>
                             <span  class="icon-clock d-inline-block"></span>
-                            <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
+                            <span  class="ng-tns-c11-2">{{item?.date}} </span>
                         </p>
-                        <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                    </div>
-                </div>
-                <div  class="media mb-1 ng-star-inserted">
-                    <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                    <div  class="media-body">
-                        <p  class="m-0 text-time">
-                            <span  class="icon-clock d-inline-block"></span>
-                            <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                        </p>
-                        <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                    </div>
-                </div>
-                <div  class="media mb-1 ng-star-inserted">
-                    <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                    <div  class="media-body">
-                        <p  class="m-0 text-time">
-                            <span  class="icon-clock d-inline-block"></span>
-                            <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                        </p>
-                        <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                    </div>
-                </div>
-                <div  class="media mb-1 ng-star-inserted">
-                    <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                    <div  class="media-body">
-                        <p  class="m-0 text-time">
-                            <span  class="icon-clock d-inline-block"></span>
-                            <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                        </p>
-                        <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                    </div>
-                </div>
-                <div  class="media mb-1 ng-star-inserted">
-                    <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                    <div  class="media-body">
-                        <p  class="m-0 text-time">
-                            <span  class="icon-clock d-inline-block"></span>
-                            <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                        </p>
-                        <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
+                        <h5 style="padding-top: 6px;" class="mt-0">{{item?.title}}</h5>
                     </div>
                 </div>
             </div>
-            <div  class="xcol-3 col-12 col-lg-4 p-1">
-                <div  class="d-flex flex-wrap">
-                    <!---->
-                    <div  class="media mb-1 item ng-star-inserted">
-                        <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                        <div  class="media-body">
-                            <p  class="m-0 text-time">
-                                <span  class="icon-clock d-inline-block"></span>
-                                <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                            </p>
-                            <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                        </div>
-                    </div>
-                    <div  class="media mb-1 item ng-star-inserted">
-                        <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                        <div  class="media-body">
-                            <p  class="m-0 text-time">
-                                <span  class="icon-clock d-inline-block"></span>
-                                <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                            </p>
-                            <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                        </div>
-                    </div>
-                    <div  class="media mb-1 item ng-star-inserted">
-                        <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                        <div  class="media-body">
-                            <p  class="m-0 text-time">
-                                <span  class="icon-clock d-inline-block"></span>
-                                <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                            </p>
-                            <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                        </div>
-                    </div>
-                    <div  class="media mb-1 item ng-star-inserted">
-                        <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                        <div  class="media-body">
-                            <p  class="m-0 text-time">
-                                <span  class="icon-clock d-inline-block"></span>
-                                <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                            </p>
-                            <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                        </div>
-                    </div>
-                    <div  class="media mb-1 item ng-star-inserted">
-                        <img  alt="Generic placeholder image" class="img-body" src="https://via.placeholder.com/275x200/ddd" width="110">
-                        <div  class="media-body">
-                            <p  class="m-0 text-time">
-                                <span  class="icon-clock d-inline-block"></span>
-                                <span  class="ng-tns-c11-2">Oct 6, 2016 </span>
-                            </p>
-                            <h5  class="mt-0">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                        </div>
+            <div class="xcol-2 col-sm-6 col-lg-4 p-1">
+                <!---->
+                <div *ngFor="let item of list2"  class="media mb-1 ng-star-inserted">
+                    <img  alt="Generic placeholder image" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title" class="img-body" width="110">
+                    <div  class="media-body">
+                        <p  class="m-0 text-time">
+                            <span  class="icon-user"></span>
+                            <span  class="ng-tns-c11-2">{{item?.author}}</span>
+                            <span  class="icon-clock d-inline-block"></span>
+                            <span  class="ng-tns-c11-2">{{item?.date}} </span>
+                        </p>
+                        <h5 style="padding-top: 6px;" class="mt-0">{{item?.title}}</h5>
                     </div>
                 </div>
             </div>

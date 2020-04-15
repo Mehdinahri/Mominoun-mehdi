@@ -1,0 +1,15 @@
+.media-body h5:hover, .post-info h4:hover {
+    color: #e05111!important;
+}
+.media-body h5 {
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color .3s;
+}
+.bg-radicalism {
+    background: #df5111;
+}
+.bg-abhat {
+    background: #a11412;
+}

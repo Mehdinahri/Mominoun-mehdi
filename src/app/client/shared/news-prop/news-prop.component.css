@@ -1,0 +1,13 @@
+.p-1 {
+    display: inline-block;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #e15111;
+    text-decoration: none;
+}
+.p-1{
+    text-align: center;
+}

@@ -47,7 +47,7 @@ section {
     text-decoration: none;
 }
 .type-publish .selected a, .type-publish li a:hover {
-    color: #e05211;
+    color: #eee;
 }
 @media screen and (min-width: 992px)
 {

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AbhathMahkamaRoutingModule } from './abhath-mahkama-routing.module';
 import { AbhathMahkamaComponent } from './abhath-mahkama.component';
-import { ListAbhathModule } from '../list-abhath/list-abhath.module';
+import { ListAbhathModule } from '../../shared/list-abhath/list-abhath.module';
+import { AbhathMahkamaRoutingModule } from './abhath-mahkama-routing.module';
 
 
 @NgModule({

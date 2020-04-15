@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-event01',
@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Event01Component implements OnInit {
 
+  @Input() listanchita: any[] = [
+    {
+      image: "https://via.placeholder.com/276x126/ddd",
+
+    },{
+      image: "https://via.placeholder.com/276x126/00b",
+
+    },{
+      image: "https://via.placeholder.com/276x126/b00",
+
+    },{
+      image: "https://via.placeholder.com/276x126/0r0",
+
+    }
+  ]
   constructor() { }
 
   ngOnInit() {

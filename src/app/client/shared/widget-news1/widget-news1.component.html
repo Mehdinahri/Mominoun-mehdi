@@ -1,0 +1,15 @@
+<h2  class="{{color1}}">{{title1}}</h2>
+<article class="item" *ngFor="let item1 of list">
+    <div class="item-photo col-md-4">
+        <a href="item1?.link">
+            <img  alt="" class="img-fluid mb-2" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item1?.image" [alt]="item1?.title">
+        </a>
+    </div>
+    <div class="item-content col-md-8">
+        <h4 class="ng-tns-c10-5" style="text-align:justify;"><a href="item1?.link">{{item1?.title}}</a></h4>
+        <div class="item-foot">
+            <a href="#"><span  class="icon-clock d-inline-block ml-2 mr-0"></span>{{item1?.date}}</a>
+            <a class="item-more" href="item1?.link"><b>للمزيد</b></a>
+        </div>
+    </div>
+</article>

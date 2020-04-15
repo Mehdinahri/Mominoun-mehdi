@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { TarjamatRoutingModule } from './tarjamat-routing.module';
 import { TarjamatComponent } from './tarjamat.component';
-import { SecondryNavModule } from '../acceuil/secondry-nav/secondry-nav.module';
-import { TarjamatlistModule } from './tarjamatlist/tarjamatlist.module';
+import { SecondryNavModule } from '../shared/secondry-nav/secondry-nav.module';
+import { TarjamatlistModule } from '../shared/tarjamatlist/tarjamatlist.module';
 
 
 @NgModule({

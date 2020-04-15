@@ -1,0 +1,39 @@
+<section class="m-sec">
+    <div class="row mt-4">
+        <div class="col-12 col-md-8">
+            <h3 class="section_title title-{{bgcolor1}} mb-4">{{title02}}</h3>
+            <!---->
+            <article *ngFor="let item of listarticle | paginate: { id: 'article01', itemsPerPage: itemsPerPage, currentPage: page, totalItems: items_count }; let i= index" class="item item-radicalism ng-star-inserted">
+                <div class="media">
+                    <img alt="Generic placeholder image" class="img-fluid img" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+                    <div class="media-body">
+                        <h3 class="m-2">
+                            <a class="m-0" href="">{{item?.title}}</a>
+                        </h3>
+                        <p class="mb-2 mt-2 text-time">
+                            <span class="icon-user"></span>
+                            <span class="ng-tns-c7-1">{{item?.author}}</span>
+                            <span class="icon-clock d-inline-block ml-2 mr-0"></span>
+                            <span class="ng-tns-c7-1"> {{item?.date}}</span>
+                        </p>
+                            <p>{{item?.description}}</p>
+                        </div>
+                    </div>
+                </article>
+        </div>
+        <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
+            <!-- widget slide -->
+            <app-widget-slid [title1]="'مختارات مومنون'" [color1]="'section_title section_title_abhat'"></app-widget-slid>
+            <!-- widget news -->
+            <app-widget-news1 [title1]="'الأكثر قراءة لهذا الأسبوع'" [color1]="'section_title section_title_abhat'"></app-widget-news1>
+            <!-- widget Image -->
+            <app-widget-image [title1]="'تابعنا على مواقع التواصل'" [color1]="'section_title section_title_abhat'" ></app-widget-image>
+        </div>
+    </div>
+    <div *ngIf="paginate" style="margin:auto">
+        <pagination-controls  id="article01" (pageChange)="getPage($event)" maxSize="12" directionLinks="true"
+        autoHide="true" responsive="true" previousLabel="السابق" nextLabel="التالي"></pagination-controls>
+
+    </div>
+            
+</section>

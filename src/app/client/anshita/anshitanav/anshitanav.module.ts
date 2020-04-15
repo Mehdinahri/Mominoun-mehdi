@@ -8,7 +8,8 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [AnshitanavComponent],
   imports: [
-    CommonModule,    RouterModule
+    CommonModule,    
+    RouterModule
   ],exports:[
     AnshitanavComponent
   ]

@@ -1,24 +1,11 @@
-.section_title {
-    font-size: 23px;
-    padding: 15px 15px 18px;
-    background: #eee;
-    color: #333;
-    width: 100%;
-    font-weight: 700;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-.section_title_acceuil {
-    border-right: 6px solid #e15111;
-}
-.side-left article {
-    margin: auto;
-    max-width: 350px;
-}
-.side-left .box-overlay {
-    padding: 15px 10px;
-    width: 100%;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    color: #fff;
+@media screen and (min-width: 670px)
+{
+    .row .main-post img {
+        max-height: 164px;
+        vertical-align: top;
+    }
+    .row .main-post .post-info {
+        display: inline-block;
+        width: calc(100% - 294px);
+    }
 }

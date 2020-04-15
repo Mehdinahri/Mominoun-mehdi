@@ -1,0 +1,12 @@
+.item-more{
+    float: left;
+}
+.item{
+        display: flex;
+        margin-bottom: 17px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    h4{
+        font-size: 17px;
+    }

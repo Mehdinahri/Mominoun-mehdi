@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MasharieBahathiyatSabiqaRoutingModule } from './masharie-bahathiyat-sabiqa-routing.module';
 import { MasharieBahathiyatSabiqaComponent } from './masharie-bahathiyat-sabiqa.component';
-import { ListAbhathModule } from '../../dirasat-wa-abhath/list-abhath/list-abhath.module';
+import { ListAbhathModule } from '../../shared/list-abhath/list-abhath.module';
 
 
 @NgModule({

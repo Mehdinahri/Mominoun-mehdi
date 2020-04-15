@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BookRoutingModule } from './book-routing.module';
 import { BookComponent } from './book.component';
-import { TarjamatlistModule } from '../../tarjamat/tarjamatlist/tarjamatlist.module';
+import { TarjamatlistModule } from '../../shared/tarjamatlist/tarjamatlist.module';
 
 
 @NgModule({

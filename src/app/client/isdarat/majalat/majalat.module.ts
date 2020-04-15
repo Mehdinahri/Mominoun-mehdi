@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MajalatRoutingModule } from './majalat-routing.module';
 import { MajalatComponent } from './majalat.component';
-import { TarjamatlistModule } from '../../tarjamat/tarjamatlist/tarjamatlist.module';
+import { TarjamatlistModule } from '../../shared/tarjamatlist/tarjamatlist.module';
 
 
 @NgModule({

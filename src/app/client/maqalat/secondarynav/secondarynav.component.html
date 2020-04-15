@@ -3,14 +3,14 @@
     <div class="nav-radicalism position-relative ng-tns-c4-26 ng-star-inserted">
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav  ">
-                <li class="nav-item nav-item-programs-searchs" routerLink="/maqalat" style="background-color: transparent;">
-                    <a class="nav-link" routerLink="/maqalat" routerlinkactive="selected">الرئيسية</a>
+                <li class="nav-item nav-item-programs-searchs" routerLinkActive="selected" [routerLinkActiveOptions]="{exact: true}" style="background-color: transparent;">
+                    <a class="nav-link" routerLink="/maqalat">الرئيسية</a>
                 </li>
-                <li class="nav-item nav-item-programs-searchs" routerLink="maqalatray" style="background-color: transparent;">
-                    <a class="nav-link" routerLink="maqalatray" routerlinkactive="selected">مقالات رأي</a>
+                <li class="nav-item nav-item-programs-searchs" routerLinkActive="selected" style="background-color: transparent;">
+                    <a class="nav-link" routerLink="maqalatray">مقالات رأي</a>
                 </li>
-                <li class="nav-item nav-item-reports" routerLink="maqalat" style="background-color: transparent;">
-                    <a class="nav-link" routerLink="maqalat" routerlinkactive="selected">مقالات</a>
+                <li class="nav-item nav-item-reports" routerLinkActive="selected" style="background-color: transparent;">
+                    <a class="nav-link" routerLink="maqalat">مقالات</a>
                 </li>
             </ul>
         </div>

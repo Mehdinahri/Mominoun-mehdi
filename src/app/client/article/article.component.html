@@ -1,0 +1,46 @@
+<app-secondry-nav></app-secondry-nav>
+<article class="container">
+    <div width="90%" style="margin: auto;" class="mb-3">
+            <nav class="nav-path">
+                فئة :<span class="badge badge-pill badge-dark"><a href="#">{{list[0]?.cat}}</a></span><br>
+                قسم :<span class="badge badge-pill badge-light"><a href="#">{{list[0]?.subcat}}</a></span>
+            </nav>
+            <h1 class="main-title">{{list[0]?.title}}</h1>
+        <div class="container time-of-post mb-3">
+            <span  class="icon-clock"></span>{{list[0]?.date}}
+            <span  class="icon-user span"></span>
+            <a  href="{{item?.link}}" style="color:black">
+                <span  class="ng-tns-c11-2">{{list[0]?.author}}</span>
+            </a>
+                
+        </div>
+        <div class="container mb-3" style="text-align:center;">
+            <img width="100%" class="d-inline-block img-fluid" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="list[0]?.image" [alt]="list[0]?.title">
+        </div>                
+    </div>
+    <div class="content" style="display:flex;">
+        <div class="col-12 col-md-8">
+            <div class="">
+
+                <!--googleon: index-->
+                <div id="DynamicContentContainer">
+                    <p class="text-justify">{{list[0]?.post}}</p>
+                    <p class="text-justify">{{list[0]?.post}}</p>
+                    <p class="text-justify">{{list[0]?.post}}</p>
+                    <p class="text-justify">{{list[0]?.post}}</p>
+                </div>
+                <!--googleoff: index-->
+                <app-list-tag [title]="'البحث في الوسم'"></app-list-tag>
+                <app-news-prop [title]="'مقالات دات صلة'"></app-news-prop>
+            </div>
+        </div>
+        <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
+            <card-author [title]="'الكاتب'"></card-author>
+            <card-author [title]="'ترجمة'"></card-author>
+            <!-- widget news -->
+            <app-widget-news1 [title1]="'الأكثر قراءة لهذا الأسبوع'" [color1]="'section_title section_title_acceuil'"></app-widget-news1>
+            <!-- widget Image -->
+            <app-widget-image [title1]="'تابعنا على مواقع التواصل'" [color1]="'section_title section_title_acceuil'" ></app-widget-image>
+        </div>
+    </div>
+</article>

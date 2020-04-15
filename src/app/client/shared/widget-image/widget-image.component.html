@@ -1,0 +1,6 @@
+<h2  class="{{color1}}">{{title1}}</h2>
+<article *ngFor="let item of list" style="text-align: center;" class="position-relative mb-3">
+    <a style="margin: auto;" href="item?.link">
+        <img  alt="" class="img-fluid" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+    </a>   
+</article>

@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { MainisdaratRoutingModule } from './mainisdarat-routing.module';
 import { MainisdaratComponent } from './mainisdarat.component';
-import { Magasin01Module } from '../../acceuil/magasin01/magasin01.module';
-import { ListisdaratModule } from '../listisdarat/listisdarat.module';
+import { Magasin01Module } from '../../shared/magasin01/magasin01.module';
+import { ListisdaratModule } from '../../shared/listisdarat/listisdarat.module';
 
 
 @NgModule({

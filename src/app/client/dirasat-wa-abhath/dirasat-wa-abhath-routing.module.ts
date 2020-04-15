@@ -10,9 +10,7 @@ const routes: Routes = [
   { path: 'abhath-eama', loadChildren: () => import('./abhath-eama/abhath-eama.module').then(m => m.AbhathEamaModule) },
   { path: 'abhath-mahkama', loadChildren: () => import('./abhath-mahkama/abhath-mahkama.module').then(m => m.AbhathMahkamaModule) } ,
   { path: 'milaffat-bahathiya', loadChildren: () => import('./milaffat-bahathiya/milaffat-bahathiya.module').then(m => m.MilaffatBahathiyaModule) }
-] }, 
-{ path: 'dirasat-wa-abhath/secondarynav', loadChildren: () => import('./secondarynav/secondarynav.module').then(m => m.SecondarynavModule) }
-];
+] }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

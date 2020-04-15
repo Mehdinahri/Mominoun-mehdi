@@ -1,0 +1,22 @@
+<h2  class="{{color1}}">{{title1}}</h2>
+<section>
+    <article *ngFor="let item of list" class="position-relative mb-3">
+        <a  href="{{item?.title}}">
+            <img class="img-fluid" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+        </a>
+        <div  class="box-overlay position-absolute">
+            <h6  class="font-weight-bold">{{item?.title}}</h6>
+            <ul  class="d-none d-lg-flex list-unstyled m-0 p-0  align-items-center">
+                <li >
+                    <span  class="badge badge-dark p-2 m-1">{{item?.cat}}</span>
+                </li>
+                <li >
+                    <span  class="badge badge-dark p-2 m-1 pointer">{{item?.author}}</span>
+                </li>
+                <li >
+                    <span  class="post-date ">{{item?.date}}</span>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section>

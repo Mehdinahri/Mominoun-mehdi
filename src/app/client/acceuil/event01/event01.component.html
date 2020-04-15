@@ -1,4 +1,4 @@
-<section  class="mt-3 mb-3 m-sec  sec-upcomings position-relative">
+<section *ngIf="listanchita!=[]" class="mt-3 mb-3 m-sec  sec-upcomings position-relative">
     <div  class="row m-0">
         <div  class="container-wrapper mb-3">
         <h5  class="m-0  font-weight-bold title-section title-acceuil">أنشطة قادمة</h5>
@@ -9,36 +9,14 @@
             <!---->
             <div class="owl-stage-outer">
                 <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 1s ease 0s; width: 100%; text-align: center;">
-                <div class="owl-item" style="width: 284.5px;">
-                    <article  class="item item-0 m-1 ng-star-inserted">
-                    <div >
-                    <img  class="img-country" src="https://via.placeholder.com/276x126/ddd">
-                </div>
-                </article>
-                </div>
-                <div class="owl-item" style="width: 284.5px;">
-                        <article  class="item item-1 m-1 ng-star-inserted">
+                    <div *ngFor="let item of listanchita" class="owl-item" style="width: 284.5px;">
+                        <article  class="item item-0 m-1 ng-star-inserted">
                             <div >
-                            <img  class="img-country" src="https://via.placeholder.com/276x126/00b">
-                        </div>
+                                <img  class="img-country" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image">
+                          </div>
                         </article>
-                        </div>
-                            <div class="owl-item" style="width: 284.5px;">
-                                <article  class="item item-2 m-1 ng-star-inserted">
-                                <div >
-                                <img  class="img-country" src="https://via.placeholder.com/276x126/b00">
-                            </div>
-                            </article>
-                            </div>
-                                <div class="owl-item" style="width: 284.5px;">
-                                    
-                                    <article  class="item item-3 m-1 ng-star-inserted">
-                                        <div >
-                                        <img  class="img-country" src="https://via.placeholder.com/276x126/0r0">
-                                    </div>
-                                    </article>
-                                </div>
-                        </div>
-                        </div>
+                    </div>
+                </div>
+                </div>
     </div>
 </section>

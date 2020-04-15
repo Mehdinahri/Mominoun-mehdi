@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { AcceuilRoutingModule } from './acceuil-routing.module';
 import { AcceuilComponent } from './acceuil.component';
-import { AppSliderModule } from './app-slider/app-slider.module';
-import { Article01Module } from './article01/article01.module';
+import { AppSliderModule } from '../shared/app-slider/app-slider.module';
+import { Article01Module } from '../shared/article01/article01.module';
 import { Rapport01Module } from './rapport01/rapport01.module';
 import { Article02Module } from '../shared/article02/article02.module';
-import { Magasin01Module } from './magasin01/magasin01.module';
+import { Magasin01Module } from '../shared/magasin01/magasin01.module';
 import { Event01Module } from './event01/event01.module';
-import { Event02Module } from './event02/event02.module';
-import { GalleryimgModule } from './galleryimg/galleryimg.module';
+import { Event02Module } from '../shared/event02/event02.module';
+import { GalleryimgModule } from '../shared/galleryimg/galleryimg.module';
 import { ListPublishModule } from './list-publish/list-publish.module';
-import { SecondryNavModule } from './secondry-nav/secondry-nav.module';
+import { SecondryNavModule } from '../shared/secondry-nav/secondry-nav.module';
 
 
 @NgModule({

@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AnshitamainRoutingModule } from './anshitamain-routing.module';
 import { AnshitamainComponent } from './anshitamain.component';
-import { Event02Module } from '../../acceuil/event02/event02.module';
-import { CarouMaqalatModule } from '../../maqalat/carou-maqalat/carou-maqalat.module';
+import { Event02Module } from '../../shared/event02/event02.module';
+import { CarouMaqalatModule } from '../../shared/carou-maqalat/carou-maqalat.module';
 
 
 @NgModule({

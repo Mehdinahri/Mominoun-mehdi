@@ -1,0 +1,32 @@
+<section class="mt-3 mb-3 sec-list-6">
+    <div  class="container-wrapper m-sec">
+    <div  class="d-flex aling-items-center d-flex justify-content-between top-content">
+        <h5  class="m-0 text-move font-weight-bold">{{titrebook}}</h5>
+    </div>
+    <div  class="separator">
+        <div  class="progress bg-radicalism"></div>
+    </div>
+    <div  class="row">
+            <div  class=" p-2">
+                <div  class="row ng-trigger ng-trigger-listAnimation">
+                    <!---->
+                    <div *ngFor="let item of listarticle | paginate: { id: 'article01', itemsPerPage: itemsPerPage, currentPage: page, totalItems: items_count }; let i= index" class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
+                        <div  class="border-bottom">
+                            
+                            <img  class="d-inline-block img-fluid" width="300" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+                            <div  class="media-body">
+                                <h5  class="m-0 text-dark m-post-title">{{item?.title}}</h5>
+                                <p>{{item?.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="paginate" style="margin:auto">
+                        <pagination-controls  id="article01" (pageChange)="getPage($event)" maxSize="12" directionLinks="true"
+                        autoHide="true" responsive="true" previousLabel="السابق" nextLabel="التالي"></pagination-controls>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>             
+</section>

@@ -1,0 +1,10 @@
+.badge-dark a{
+    color: white
+}
+.badge-light a{
+    color: black
+}
+.badge a:hover{
+    color: #df5111;
+    text-decoration: none;
+}

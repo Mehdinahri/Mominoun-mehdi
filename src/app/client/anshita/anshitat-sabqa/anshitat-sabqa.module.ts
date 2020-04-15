@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AnshitatSabqaRoutingModule } from './anshitat-sabqa-routing.module';
 import { AnshitatSabqaComponent } from './anshitat-sabqa.component';
-import { ListAbhathModule } from '../../dirasat-wa-abhath/list-abhath/list-abhath.module';
+import { ListAbhathModule } from '../../shared/list-abhath/list-abhath.module';
 
 
 @NgModule({

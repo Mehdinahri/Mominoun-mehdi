@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { IsdaratRoutingModule } from './isdarat-routing.module';
 import { IsdaratComponent } from './isdarat.component';
 import { IsdaratnavModule } from './isdaratnav/isdaratnav.module';
-import { SecondryNavModule } from '../acceuil/secondry-nav/secondry-nav.module';
+import { SecondryNavModule } from '../shared/secondry-nav/secondry-nav.module';
 import { ItemMenuContentModule } from './item-menu-content/item-menu-content.module';
 
 

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AnshitaRoutingModule } from './anshita-routing.module';
 import { AnshitaComponent } from './anshita.component';
-import { SecondryNavModule } from '../acceuil/secondry-nav/secondry-nav.module';
+import { SecondryNavModule } from '../shared/secondry-nav/secondry-nav.module';
 import { AnshitanavModule } from './anshitanav/anshitanav.module';
 
 
