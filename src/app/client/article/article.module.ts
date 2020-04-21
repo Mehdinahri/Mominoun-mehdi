@@ -8,6 +8,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image'; // <-- import it
 import { ListTagModule } from '../shared/list-tag/list-tag.module';
 import { NewsPropModule } from '../shared/news-prop/news-prop.module';
 import { AuthorModule } from '../shared/author/author.module';
+import { WidgetNews1Module } from '../shared/widget-news1/widget-news1.module';
+import { WidgetImageModule } from '../shared/widget-image/widget-image.module';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { AuthorModule } from '../shared/author/author.module';
     LazyLoadImageModule,
     ListTagModule,
     NewsPropModule,
-    AuthorModule
+    AuthorModule,
+    WidgetNews1Module,
+    WidgetImageModule
   ]
 })
 export class ArticleModule { }
