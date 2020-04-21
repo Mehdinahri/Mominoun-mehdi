@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IsdaratnavComponent } from './isdaratnav.component';
 import { RouterModule } from '@angular/router';
+import { MediaNavComponent } from './media-nav.component';
 
 
 
 @NgModule({
-  declarations: [IsdaratnavComponent],
+  declarations: [MediaNavComponent],
   imports: [
     CommonModule,
     RouterModule
   ],exports:[
-    IsdaratnavComponent
+    MediaNavComponent
   ]
 })
-export class IsdaratnavModule { }
+export class MediaNavModule { }

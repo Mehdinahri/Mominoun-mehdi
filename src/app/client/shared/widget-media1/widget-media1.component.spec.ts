@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WidgetMediaImgComponent } from './widget-media-img.component';
+import { WidgetMedia1Component } from './widget-media1.component';
 
-describe('WidgetMediaImgComponent', () => {
-  let component: WidgetMediaImgComponent;
-  let fixture: ComponentFixture<WidgetMediaImgComponent>;
+describe('WidgetMedia1Component', () => {
+  let component: WidgetMedia1Component;
+  let fixture: ComponentFixture<WidgetMedia1Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WidgetMediaImgComponent ]
+      declarations: [ WidgetMedia1Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WidgetMediaImgComponent);
+    fixture = TestBed.createComponent(WidgetMedia1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

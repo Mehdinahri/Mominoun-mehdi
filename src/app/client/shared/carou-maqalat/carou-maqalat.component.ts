@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CarouMaqalatComponent implements OnInit {
 
+  @Input() title1:string;
   @Input() bgcolor1: string;
   constructor() { }
 

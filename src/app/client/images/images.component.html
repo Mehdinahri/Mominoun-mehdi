@@ -1,1 +1,24 @@
-<p>images works!</p>
+<app-secondry-nav></app-secondry-nav>
+<!-- Page Content -->
+<div class="container">
+<h2  class="section_title section_title_acceuil">حوار مع مهدي نهري</h2>
+</div>
+<section class="container mb-5" style="display: flex;">
+    <hr class="mt-2 mb-5">
+  
+    <div class="row text-center col-12 col-md-8 mb-2 pt-5">
+
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+        
+        <app-media-prop [title]="'شاهد أيضاً'"></app-media-prop>
+
+    </div>
+    
+    <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
+        <app-widget-media1 [title1]="'مكتبة الصور'" [color1]="'section_title section_title_acceuil'"></app-widget-media1>
+        <!-- widget Image -->
+        <app-widget-image [title1]="'مؤمنون ميديا'" [color1]="'section_title section_title_acceuil'" ></app-widget-image>
+    </div>
+
+</section>
+  <!-- /.container -->

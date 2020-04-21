@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'widget-media-img',
-  templateUrl: './widget-media-img.component.html',
-  styleUrls: ['./widget-media-img.component.css']
+  selector: 'app-widget-media1',
+  templateUrl: './widget-media1.component.html',
+  styleUrls: ['./widget-media1.component.css']
 })
-export class WidgetMediaImgComponent implements OnInit {
+export class WidgetMedia1Component implements OnInit {
 
   @Input() title1: string;
   @Input() color1: string;

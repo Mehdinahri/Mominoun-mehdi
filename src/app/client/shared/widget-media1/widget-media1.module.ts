@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListisdaratComponent } from './listisdarat.component';
+import { WidgetMedia1Component } from './widget-media1.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image'; // <-- import it
 
 
 
+
 @NgModule({
-  declarations: [ListisdaratComponent],
+  declarations: [WidgetMedia1Component],
   imports: [
     CommonModule,
     LazyLoadImageModule
-  ],exports:[ListisdaratComponent]
+  ],exports:[
+    WidgetMedia1Component
+  ]
 })
-export class ListisdaratModule { }
+export class WidgetMedia1Module { }

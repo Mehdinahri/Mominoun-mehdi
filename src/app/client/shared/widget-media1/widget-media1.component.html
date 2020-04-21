@@ -1,0 +1,13 @@
+<h2  class="{{color1}}">{{title1}}</h2>
+<section  style="text-align: center;" class="position-relative mb-3">
+    <div class="col-12" style="display: flex;">
+        <ul class="p-0" style="list-style: none;">
+            <li *ngFor="let item of list" class="col-md-6 li-img p-0" >
+                <article >
+                    <img  alt="" class="img-fluid img-magasin" width="100%" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image">
+                    <h6  class="text-center title">{{ item?.title }}</h6>
+                </article>
+            </li>
+        </ul>
+    </div>   
+</section>

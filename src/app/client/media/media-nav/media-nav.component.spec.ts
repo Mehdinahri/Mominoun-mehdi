@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemMenuContentComponent } from './item-menu-content.component';
+import { MediaNavComponent } from './media-nav.component';
 
-describe('ItemMenuContentComponent', () => {
-  let component: ItemMenuContentComponent;
-  let fixture: ComponentFixture<ItemMenuContentComponent>;
+describe('MediaNavComponent', () => {
+  let component: MediaNavComponent;
+  let fixture: ComponentFixture<MediaNavComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ItemMenuContentComponent ]
+      declarations: [ MediaNavComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItemMenuContentComponent);
+    fixture = TestBed.createComponent(MediaNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

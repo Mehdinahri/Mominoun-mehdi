@@ -1,0 +1,27 @@
+.primary-nav-bg-2 {
+    background-color: #273135;
+}
+.menu-content-magasins, .menu-content-videos {
+    width: 100%;
+    right: 0;
+}
+.menu-content {
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    border-top: 2px solid #f05555;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: all .3s ease-out;
+    visibility: hidden;
+}
+.nav-item.nav-item-reports.the:hover .menu-content {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0s ease-in-out;
+}
+.primary-nav-bg-4 {
+    background-color: #185440;
+}

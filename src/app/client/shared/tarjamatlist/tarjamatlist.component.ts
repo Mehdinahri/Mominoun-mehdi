@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TarjamatlistComponent implements OnInit {
 
-  @Input() titrebook: string;
+  @Input() titre: string;
   @Input() paginate: boolean;
   itemsPerPage: number = 12;
   page: number = 1;
@@ -15,114 +15,208 @@ export class TarjamatlistComponent implements OnInit {
   @Input() listarticle: any[] = [
     {
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
     },{
       title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
-      image: "http://via.placeholder.com/318x212/1600",
-      description: " لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... "
-
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "http://via.placeholder.com/318x212/1600"
     }]
   constructor() { }
 

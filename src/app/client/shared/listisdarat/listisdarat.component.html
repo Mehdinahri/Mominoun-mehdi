@@ -10,69 +10,12 @@
             <div  class=" p-2">
                 <div  class="row ng-trigger ng-trigger-listAnimation">
                     <!---->
-                    <div  class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
+                    <div *ngFor="let item of list" class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
                         <div  class="border-bottom">
                             
-                            <img  class="d-inline-block img-fluid" width="300" src="http://via.placeholder.com/318x212/1600" alt="عنوان المقال: الموقع الجديد مؤمنون بلا حدود">
+                            <img  class="d-inline-block img-fluid" width="300" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
                             <div  class="media-body">
-                                
-                                <h5  class="m-0 text-dark m-post-title">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                                <p> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... </p>
-                            </div>
-                        </div>
-                    </div><!---->
-                    <div  class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
-                        <div  class="border-bottom">
-                            
-                            <img  class="d-inline-block img-fluid" width="300" src="http://via.placeholder.com/318x212/1600" alt="عنوان المقال: الموقع الجديد مؤمنون بلا حدود">
-                            <div  class="media-body">
-                                
-                                <h5  class="m-0 text-dark m-post-title">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                                <p> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... </p>
-                            </div>
-                        </div>
-                    </div><!---->
-                    <div  class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
-                        <div  class="border-bottom">
-                            
-                            <img  class="d-inline-block img-fluid" width="300" src="http://via.placeholder.com/318x212/1600" alt="عنوان المقال: الموقع الجديد مؤمنون بلا حدود">
-                            <div  class="media-body">
-                                
-                                <h5  class="m-0 text-dark m-post-title">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                                <p> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... </p>
-                            </div>
-                        </div>
-                    </div><!---->
-                    <div  class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
-                        <div  class="border-bottom">
-                            
-                            <img  class="d-inline-block img-fluid" width="300" src="http://via.placeholder.com/318x212/1600" alt="عنوان المقال: الموقع الجديد مؤمنون بلا حدود">
-                            <div  class="media-body">
-                                
-                                <h5  class="m-0 text-dark m-post-title">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                                <p> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... </p>
-                            </div>
-                        </div>
-                    </div><!---->
-                    <div  class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
-                        <div  class="border-bottom">
-                            
-                            <img  class="d-inline-block img-fluid" width="300" src="http://via.placeholder.com/318x212/1600" alt="عنوان المقال: الموقع الجديد مؤمنون بلا حدود">
-                            <div  class="media-body">
-                                
-                                <h5  class="m-0 text-dark m-post-title">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                                <p> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... </p>
-                            </div>
-                        </div>
-                    </div><!---->
-                    <div  class="col-6 col-sm-4 p-2 " style="margin-bottom: 15px;">
-                        <div  class="border-bottom">
-                            
-                            <img  class="d-inline-block img-fluid" width="300" src="http://via.placeholder.com/318x212/1600" alt="عنوان المقال: الموقع الجديد مؤمنون بلا حدود">
-                            <div  class="media-body">
-                                
-                                <h5  class="m-0 text-dark m-post-title">عنوان المقال: الموقع الجديد مؤمنون بلا حدود</h5>
-                                <p> لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور... </p>
+                                <h5  class="m-0 text-dark m-post-title">{{item?.title}}</h5>
                             </div>
                         </div>
                     </div>
