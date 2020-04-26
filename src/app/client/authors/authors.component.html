@@ -1,0 +1,37 @@
+<app-secondry-nav></app-secondry-nav>
+<section class="container">
+    <div class="content" style="display:flex;">
+        <div class="col-12 col-md-8 side-right">
+            <h2  class="section_title section_title_acceuil">الكتاب و الباحثون</h2>
+            <div  class="row mb-5">
+                <div *ngFor="let item of list | paginate: { id: 'article01', itemsPerPage: itemsPerPage, currentPage: page, totalItems: items_count }; let i= index" class="col-md-6 article-list ng-scope">
+                    <article class="news-block clearfix list-style events wow fadeIn">
+                        <a class="news-img" href="{{item?.link}}">
+                            <img class="img-fluid auth-img rounded-circle " style="width: 20%;" src="..\\..\\assets\\img\\002.jpg">
+                        </a>
+                        <div class="description-div">
+                            <h2 class="title block-ellipsis">
+                                <a href="{{item?.link}}">{{item?.name}}</a>
+                            </h2>
+                            
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <div *ngIf="paginate" style="margin:auto">
+                <pagination-controls  id="article01" (pageChange)="getPage($event)" maxSize="12" directionLinks="true"
+                autoHide="true" responsive="true" previousLabel="السابق" nextLabel="التالي"></pagination-controls>
+
+            </div>
+        </div>
+        <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
+            <!-- widget slide -->
+            <app-widget-slid [title1]="'مختارات مومنون'" [color1]="'section_title section_title_acceuil'"></app-widget-slid>
+            <!-- widget news -->
+            <app-widget-news1 [title1]="'الأكثر قراءة لهذا الأسبوع'" [color1]="'section_title section_title_acceuil'"></app-widget-news1>
+            <!-- widget Image -->
+            <app-widget-image [title1]="'تابعنا على مواقع التواصل'" [color1]="'section_title section_title_acceuil'" ></app-widget-image>
+        </div>
+    </div>
+</section>

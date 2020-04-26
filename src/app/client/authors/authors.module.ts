@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AuthorRoutingModule } from './author-routing.module';
-import { AuthorComponent } from './author.component';
+import { AuthorsRoutingModule } from './authors-routing.module';
+import { AuthorsComponent } from './authors.component';
+import { SecondryNavModule } from '../shared/secondry-nav/secondry-nav.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image'; // <-- import it
-import { NewsPropModule } from '../shared/news-prop/news-prop.module';
 import { WidgetNews1Module } from '../shared/widget-news1/widget-news1.module';
 import { WidgetImageModule } from '../shared/widget-image/widget-image.module';
 import { WidgetSlidModule } from '../shared/widget-slid/widget-slid.module';
-import { SecondryNavModule } from '../shared/secondry-nav/secondry-nav.module';
 import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 
 @NgModule({
-  declarations: [AuthorComponent],
+  declarations: [AuthorsComponent],
   imports: [
     CommonModule,
-    AuthorRoutingModule,
+    AuthorsRoutingModule,
     LazyLoadImageModule,
-    NewsPropModule,
     WidgetImageModule,
     WidgetNews1Module,
     SecondryNavModule,
@@ -26,4 +24,4 @@ import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
     NgxPaginationModule
   ]
 })
-export class AuthorModule { }
+export class AuthorsModule { }

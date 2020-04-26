@@ -7,7 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AuthorComponent implements OnInit {
 
-  @Input() name:string;
+  @Input() paginate: boolean;
+  itemsPerPage: number = 8;
+  page: number = 1;
+  items_count: number = 0;
   @Input() list: any[] = [
     {
       name: "سمير جواق",
@@ -64,10 +67,63 @@ export class AuthorComponent implements OnInit {
       date: "Oct 2, 2016",
       desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
       author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
+    },{
+      title: "عنوان المقال: الموقع الجديد مؤمنون بلا حدود",
+      image: "https://via.placeholder.com/610x342/ddd",
+      date: "Oct 2, 2016",
+      desc:"بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...",
+      author:"أنس بومدين"
     }]
   constructor() { }
 
   ngOnInit() {
+    this.paginate=true;
+    this.items_count = this.listartl.length;
+  }
+  getPage($event) {
+    console.log($event)
   }
 
 }

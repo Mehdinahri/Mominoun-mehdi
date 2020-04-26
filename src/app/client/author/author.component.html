@@ -2,24 +2,27 @@
 <article class="container">
     <div style="margin: auto;" class="mb-3">
         <h2  class="section_title section_title_acceuil">تعريف الكاتب</h2>
-        <div *ngFor="let item of list" class="card">
-            <div class="card-body text-center">
-                <p>
-                    <img class="img-fluid auth-img rounded-circle " style="width: 30%;" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="list[0]?.image" [alt]="list[0]?.name">
-                </p>
-                <h4 class="card-title">{{item?.name}}</h4>
-                <p class="card-text text-justify">{{item?.desc}}</p>
-            </div>
+        <div *ngFor="let item of list" class="card mt-3">
+            <div class="container" style="display: flex;;">
+    
+                <div class="col-md-2 p-3">
+                    <img [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="list[0]?.image" [alt]="list[0]?.name" style="width:100%">
+                </div>
+                <div class="col-md-10 mt-2 p-2">
+                    <h4 style="display:flex"><b>{{item?.name}}</b></h4> 
+                    <p style="text-align: justify">{{item?.desc}}</p> 
+                </div>
+            </div>    
         </div>
     </div>
     <div class="content" style="display:flex;">
         <div class="col-12 col-md-8">
             <h2  class="section_title section_title_acceuil">مقالات أخرى للكاتب</h2>
-            <div  class="row">
+            <div  class="row mb-3">
                 <div  class="row">
-                    <div *ngFor="let item of listartl" class="col-12  main-post p-2">
-                        <div  class="img-main ">
-                        <img class="img-fluid mb-2" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+                    <div *ngFor="let item of listartl | paginate: { id: 'article01', itemsPerPage: itemsPerPage, currentPage: page, totalItems: items_count }; let i= index" class="col-12  main-post p-2">
+                        <div style="display: flex;"  class="img-main ">
+                        <img class="img-fluid mb-2" style="width: 38%;" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
                         <div  class="post-info">
                             <ul  class="list-unstyled pr-3 m-0">
                                 <li >
@@ -44,6 +47,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div *ngIf="paginate" style="margin:auto">
+                <pagination-controls  id="article01" (pageChange)="getPage($event)" maxSize="12" directionLinks="true"
+                autoHide="true" responsive="true" previousLabel="السابق" nextLabel="التالي"></pagination-controls>
+
             </div>
         </div>
         <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
