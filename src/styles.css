@@ -520,3 +520,7 @@ article {
         max-width: 50%;
     }
 }
+.btn-link:hover {
+    color: #d45217;
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.container.mt-5.mb-3{
+    display: flex;
+}
+.col-md-9 p {
+    -webkit-text-stroke-width: medium;
+}
+
+@media (max-width: 768px){
+    .col-md-3{
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-md-9 {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container.mt-5.mb-3{
+        display: block;
+        text-align: center;
+    }
+}

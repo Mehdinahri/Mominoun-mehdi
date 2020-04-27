@@ -1,0 +1,8 @@
+@media (max-width: 980px){
+    .col-md-8 {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center !important;
+    }
+}

@@ -20,10 +20,10 @@ const routes: Routes = [
   { path: 'images', loadChildren: () => import('./images/images.module').then(m => m.ImagesModule) },
   { path: 'video', loadChildren: () => import('./video/video.module').then(m => m.VideoModule) },
   { path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule) },
-  { path: 'authors', loadChildren: () => import('./authors/authors.module').then(m => m.AuthorsModule) }
+  { path: 'authors', loadChildren: () => import('./authors/authors.module').then(m => m.AuthorsModule) },
+  { path: 'contactus', loadChildren: () => import('./contactus/contactus.module').then(m => m.ContactusModule) }
   ]
- },
-  { path: 'contactus', loadChildren: () => import('./contactus/contactus.module').then(m => m.ContactusModule) },];
+ },];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
