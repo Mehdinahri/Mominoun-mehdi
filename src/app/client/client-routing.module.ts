@@ -21,7 +21,12 @@ const routes: Routes = [
   { path: 'video', loadChildren: () => import('./video/video.module').then(m => m.VideoModule) },
   { path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule) },
   { path: 'authors', loadChildren: () => import('./authors/authors.module').then(m => m.AuthorsModule) },
-  { path: 'contactus', loadChildren: () => import('./contactus/contactus.module').then(m => m.ContactusModule) }
+  { path: 'contactus', loadChildren: () => import('./contactus/contactus.module').then(m => m.ContactusModule) },
+  { path: 'overview', loadChildren: () => import('./overview/overview.module').then(m => m.OverviewModule) },
+  { path: 'aboutus', loadChildren: () => import('./aboutus/aboutus.module').then(m => m.AboutusModule) },
+  { path: 'formulaires', loadChildren: () => import('./formulaires/formulaires.module').then(m => m.FormulairesModule) },
+  { path: 'tags', loadChildren: () => import('./tags/tags.module').then(m => m.TagsModule) },
+  { path: 'boardoftrustees', loadChildren: () => import('./boardoftrustees/boardoftrustees.module').then(m => m.BoardoftrusteesModule) }
   ]
  },];
 

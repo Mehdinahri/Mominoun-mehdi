@@ -1,0 +1,52 @@
+<section  class="m-sec">
+    <div  class="row">
+        <div  class="col-lg-8 col-md-8 col-sm-12 side-right">
+            <h2  class="section_title section_title_acceuil">آخر مستجدات في
+                 <span style="color:#e15111">{{tag}}</span>
+            </h2>
+            <div  class="row">
+                <div  class="row">
+                    <div *ngFor="let item of listartl | paginate: { id: 'article01', itemsPerPage: itemsPerPage, currentPage: page, totalItems: items_count }; let i= index" class="col-12  main-post p-2 mb-3">
+                        <div  class="img-main ">
+                        <img class="img-fluid mb-2" [defaultImage]="'assets/img/spinner/sp-lg.svg'" [lazyLoad]="item?.image" [alt]="item?.title">
+                        <div  class="post-info">
+                            <ul  class="list-unstyled pr-3 m-0">
+                                <li >
+                                <p  class="m-0 text-time">
+                                <span  class="icon-user"></span>
+                                <span >{{item?.author}}</span>
+                                <span  class="icon-clock d-inline-block ml-2 mr-0"></span>
+                                <span > {{item?.date}}</span>
+                            </p>
+                            </li>
+                                <li  class="mb-1 mt-1">
+                                    <h3  class=" m-0 pointer"><b >{{item?.title}}</b></h3>
+                                </li>
+                                <li >
+                                    <p  class="paragraphe">{{item?.desc}}</p>
+                                </li>
+                                <li >
+                                    <button  class="btn-sm btn-light bg-acceuil btn text-light">المزيد</button>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="paginate" style="margin: auto;">
+                    <pagination-controls  id="article01" (pageChange)="getPage($event)" maxSize="8" directionLinks="true"
+                    autoHide="true" responsive="true" previousLabel="السابق" nextLabel="التالي"></pagination-controls>
+        
+                </div>
+            </div>
+        </div>
+    <div  class="col-lg-4 col-md-4 col-sm-12 side-left">
+        <!-- widget slide -->
+        <app-widget-slid [title1]="'مختارات مومنون'" [color1]="'section_title section_title_acceuil'"></app-widget-slid>
+        <!-- widget news -->
+        <app-widget-news1 [title1]="'الأكثر قراءة لهذا الأسبوع'" [color1]="'section_title section_title_acceuil'"></app-widget-news1>
+        <!-- widget Image -->
+        <app-widget-image [title1]="'تابعنا على مواقع التواصل'" [color1]="'section_title section_title_acceuil'" ></app-widget-image>
+    </div>
+</div>
+</section>

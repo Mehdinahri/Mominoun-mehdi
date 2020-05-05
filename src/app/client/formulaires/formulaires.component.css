@@ -1,0 +1,18 @@
+
+.block-content {
+    padding: 15px;
+}
+p {
+    display: block;
+    margin-bottom: 15px;
+}
+li{
+    margin: 10px;
+}
+li a{
+    -webkit-text-stroke-width: medium;
+}
+li a:hover{
+    color:#e15111 !important;
+    text-decoration: none;
+}
